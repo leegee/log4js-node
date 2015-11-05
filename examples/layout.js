@@ -11,7 +11,7 @@ log4js.configure({
             type: "console",
             layout: {
                 type    : "pattern",
-                pattern : "%[%p {file=%F{2}} /class=%C{1}/ /line=%l/ -%]\t%m"
+                pattern : "%[%p; file=%F{2}; class=%C; line=%l -%]\t%m"
             }
         }
     ],
