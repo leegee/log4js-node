@@ -8,11 +8,12 @@ log4js.configure({
             category: [ 'cheese','console' ]
         },
         {
-            type: "console",
-            layout: {
-                type    : "pattern",
-                pattern : "%[%p; file=%F{2}; class=%C; line=%l -%]\t%m"
-            }
+            type: "console"
+            // This should work only outside of the log4js directory,
+            // , layout: {
+            //     type    : "pattern",
+            //     pattern : "%[%p; file=%F{2}; class=%C; line=%l -%]\t%m"
+            // }
         }
     ],
     replaceConsole: true
